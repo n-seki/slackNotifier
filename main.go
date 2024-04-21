@@ -61,7 +61,7 @@ func notify(token string, channelID string, header string, message string) {
 		text = text + "```"
 	}
 	if len(header) > 0 {
-		text = header + "\n" + text
+		text = header + "\n\n" + text
 	}
 
 	_, _, err := api.PostMessage(
